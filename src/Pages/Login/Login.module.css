@@ -1,7 +1,10 @@
 .logincontainer{
-    max-width: 30rem;
-    max-height: 50rem;
+    max-width: 25rem;
+    height: 35rem;
     padding: 2rem;
+    border: 1px solid ;
+    border-radius: 12px;
+    margin: auto auto;
 }
 
 .heading{
@@ -9,9 +12,39 @@
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.7rem;
+    clear: right;
+    margin-bottom: 2rem;
 }
 
 .icon{
-    display: flex;
-    justify-content: right;
+    float: right;
+    margin-bottom: 4rem;
+}
+
+.phonebutton, .mailbutton{
+   border: none;
+   background-color: white;
+   color: #797979;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+
+.phonebutton{
+    margin-right: 2rem;
+}
+
+.label{
+    font-size: 1rem;
+    color: #797979;
+}
+
+#phoneno, #password{
+    background-color: #F3F3F3;
+    width: 20rem;
+    padding: 1rem;
+    height: 3.5rem;
+    border-radius: 12px;
+}
+#phoneno::placeholder, #password::placeholder{
+    color: rgba(121, 121, 121, 0.5);
 }

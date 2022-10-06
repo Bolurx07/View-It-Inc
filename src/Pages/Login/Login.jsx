@@ -8,17 +8,22 @@ const Login = () => {
       <section className={lgStyle.logincontainer}>
           <img src={xicon} alt="icon" className={lgStyle.icon} />
           <h1 className={lgStyle.heading}>Login to View-It Inc</h1>
-          <div>
-              <p>Phone Number</p>
-              <p>Email</p>
+          <div className={lgStyle.buttondiv}>
+            <button className={lgStyle.phonebutton}>Phone Number</button>
+            <button className={lgStyle.mailbutton}>Email</button>
           </div>
           <form action="./" type="submit">
             <div>
-              <label htmlFor="phone-no">Phone Number</label>
+              <label className={lgStyle.label} htmlFor="phone-no">Phone Number</label>
+              <br />
+              <br />
               <input type="phone" name="phone-no" placeholder="Phone Number" id={lgStyle.phoneno} />
             </div>
+            <br />
             <div>
-                <label htmlFor="">Password</label>
+                <label className={lgStyle.label} htmlFor="">Password</label>
+                <br />
+                <br />
                 <input type="password" name="password" placeholder="Password" id={lgStyle.password} />
             </div>
             <div>

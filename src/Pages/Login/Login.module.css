@@ -1,4 +1,17 @@
-.demo{
-    color: blue;
-    font-size: 5rem;
+.logincontainer{
+    max-width: 30rem;
+    max-height: 50rem;
+    padding: 2rem;
+}
+
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: right;
 }

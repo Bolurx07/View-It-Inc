@@ -1,12 +1,13 @@
 import lgStyle from './Login.module.css'
-import { Link } from 'react'
+// import { Link } from 'react-router-dom'
 import xicon from "../../Assets/xicon.svg"
 
 const Login = () => {
   return (
     <div>
-      <section>
-          <img src={xicon} alt="icon"  />
+      <section className={lgStyle.logincontainer}>
+          <img src={xicon} alt="icon" className={lgStyle.icon} />
+          <h1 className={lgStyle.heading}>Login to View-It Inc</h1>
           <div>
               <p>Phone Number</p>
               <p>Email</p>
@@ -29,7 +30,7 @@ const Login = () => {
           </form>
           <div>
             <p>Don't have an account?</p>
-            <Link to="./"><span>Sign Up</span></Link>
+            {/* <Link to="./"><span>Sign Up</span></Link> */}
           </div>
       </section>
     </div>

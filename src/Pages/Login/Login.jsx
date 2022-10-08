@@ -1,5 +1,5 @@
 import lgStyle from './Login.module.css'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import xicon from "../../Assets/xicon.svg"
 
 const Login = () => {
@@ -26,18 +26,26 @@ const Login = () => {
                 <br />
                 <input type="password" name="password" placeholder="Password" id={lgStyle.password} />
             </div>
-            <div>
+            <div className={lgStyle.checkboxcontainer}>
+              <div>
                 <input type="checkbox" name="checkbox" id={lgStyle.checkbox} />
                 <span>Remember me</span>
+              </div>
                 <p>Forgot Password?</p>
             </div>
-            <button type="submit" id={lgStyle.button}>Login</button>
+
+            <div >
+              <button type="submit" id={lgStyle.login}>Login</button>
+            </div>
+
           </form>
-          <div>
+          <div className={lgStyle.foot}>
             <p>Don't have an account?</p>
-            {/* <Link to="./"><span>Sign Up</span></Link> */}
+            <span>Sign Up</span>
           </div>
       </section>
+      
+  
     </div>
   )
 }

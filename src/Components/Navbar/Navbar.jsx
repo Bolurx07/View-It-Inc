@@ -6,6 +6,7 @@ const Navbar = () => {
     <div>
         <div>
             <img src={logo} alt="logo"/>
+            <h1>View It Inc</h1>
         </div>
     </div>
   )

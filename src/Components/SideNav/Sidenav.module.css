@@ -1,8 +1,6 @@
 .container{
-    
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     border-right: 1px solid  rgb(201, 197, 197);
     padding: 1rem 0.5rem;
 }

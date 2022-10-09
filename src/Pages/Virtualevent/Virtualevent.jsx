@@ -33,7 +33,7 @@ const Virtualevent = () => {
     ])
 
   return (
-    
+
     <div>
         <Navbar />
         <div className={virtualStyle.mysidenav}>
@@ -43,7 +43,7 @@ const Virtualevent = () => {
            
         </div>
 
-
+               
     </div>
   )
 }

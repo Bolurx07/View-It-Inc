@@ -18,27 +18,29 @@ import video from '../../Assets/videoicon.svg'
 const Virtualevent = () => {
     // Usestate for sidenav component
     const [sidenav] = useState([
-        { Image: home, paragraph: "Home" },
-        { Image: stream, paragraph: "Live Streams" },
-        { Image: event, paragraph: "Virtual Events" },
-        { Image: studio, paragraph: "Studio" },
-        { Image: video, paragraph: "My Video" },
-        { Image: mychannel, paragraph: "My Channel" },
-        { Image: subscribe, paragraph: "Subscription" },
-        { Image: library, paragraph: "Library" },
-        { Image: history, paragraph: "History" },
-        { Image: channel, paragraph: "Channels" },
-        { Image: setting, paragraph: "Settings" },
-        { Image: help, paragraph: "Help" }
+        { Image: home, paragraph: "Home", active: false },
+        { Image: stream, paragraph: "Live Streams", active: false  },
+        { Image: event, paragraph: "Virtual Events", active: true },
+        { Image: studio, paragraph: "Studio", active: false },
+        { Image: video, paragraph: "My Video", active: false },
+        { Image: mychannel, paragraph: "My Channel", active: false },
+        { Image: subscribe, paragraph: "Subscription", active: false },
+        { Image: library, paragraph: "Library", active: false },
+        { Image: history, paragraph: "History", active: false },
+        { Image: channel, paragraph: "Channels", active: false },
+        { Image: setting, paragraph: "Settings", active: false },
+        { Image: help, paragraph: "Help", active: false }
     ])
 
   return (
+    
     <div>
         <Navbar />
-        <div>
+        <div className={virtualStyle.mysidenav}>
             {sidenav.map((item) => (
-                <Sidenav image={item.Image} paragraph={item.paragraph} />
+                <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
             ))}
+           
         </div>
 
 

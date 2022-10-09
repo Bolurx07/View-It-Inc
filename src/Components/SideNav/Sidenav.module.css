@@ -1,11 +1,38 @@
 .container{
+    
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
+    border-right: 1px solid  rgb(201, 197, 197);
+    padding: 1rem 0.5rem;
 }
 
 .container p{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1rem;
+    padding-right: 3.5rem;
 }
+
+.container img{
+    width: 3rem;
+    padding: 0 1rem;
+}
+
+.container:hover{
+    color: white;
+    background-color: #8D74F4;
+    cursor: pointer;
+    fill: white;
+    }
+
+/* Strictly for the active props in my usestate */
+.background{
+    background-color: #8D74F4;
+    color: white;
+}
+
+.nobackground{
+    background-color: none;
+}
+

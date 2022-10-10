@@ -15,6 +15,7 @@ import history from '../../Assets/historyicon.svg'
 import setting from '../../Assets/settingicon.svg'
 import help from '../../Assets/helpicon.svg'
 import video from '../../Assets/videoicon.svg'
+import search from '../../Assets/searchicon.svg'
 
 const Virtualevent = () => {
     // Usestate for sidenav component
@@ -35,9 +36,12 @@ const Virtualevent = () => {
 
   return (
 
-    <div>
+    <div className={virtualStyle.maincontainer}>
+
         {/* Navbar Component */}
-        <Navbar />
+        <div className={virtualStyle.navbar}>
+            <Navbar />
+        </div>
 
         {/* Sidenav Component */}
         <div className={virtualStyle.mysidenav}>
@@ -48,8 +52,8 @@ const Virtualevent = () => {
 
         {/* Search Input */}
         <div className={virtualStyle.inputcontainer}>
-            <input type="search" placeholder='Search' name="search" id="search" />
-            <button className={virtualStyle.button}>Search</button>
+            <input type="search" placeholder='Search' name="search" id={virtualStyle.search} />
+            <button className={virtualStyle.button}> <img src={search} alt="icon"/> Search</button>
         </div>
 
 

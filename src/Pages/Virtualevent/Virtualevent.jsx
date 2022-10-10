@@ -1,5 +1,6 @@
 import virtualStyle from './Virtualevent.module.css'
 import { useState } from 'react'
+import Calendarr from '../../Components/Calendar/Calendarr'
 import Navbar from '../../Components/Navbar/Navbar'
 import Sidenav from '../../Components/SideNav/Sidenav'
 import home from '../../Assets/homeicon.svg'
@@ -35,12 +36,26 @@ const Virtualevent = () => {
   return (
 
     <div>
+        {/* Navbar Component */}
         <Navbar />
+
+        {/* Sidenav Component */}
         <div className={virtualStyle.mysidenav}>
             {sidenav.map((item) => (
                 <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
-            ))}
-           
+            ))}   
+        </div>
+
+        {/* Search Input */}
+        <div className={virtualStyle.inputcontainer}>
+            <input type="search" placeholder='Search' name="search" id="search" />
+            <button className={virtualStyle.button}>Search</button>
+        </div>
+
+
+        {/* Sidenav Component */}
+        <div className={virtualStyle.calendarcontainer}>
+            <Calendarr />
         </div>
 
                

@@ -1,7 +1,23 @@
+/* Style for sidenav component */
 
 .mysidenav{
     position: absolute;
     left: 0;
+}
+
+/* Style for Calendar component */
+
+.calendarcontainer{
+    margin-left: 12rem;
+}
+
+/* Style for input button */
+
+.inputcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
     
-  
 }

@@ -56,6 +56,24 @@ const Virtualevent = () => {
             <button className={virtualStyle.button}> <img src={search} alt="icon"/> Search</button>
         </div>
 
+            {/* Heading */}
+        <div className={virtualStyle.header}>
+            <div className={virtualStyle.header1}>
+                <p>Meeting</p>
+                <p className={virtualStyle.para}>Podcast</p>
+                <p className={virtualStyle.para}>Webinar</p>
+            </div>
+            <div className={virtualStyle.header2}>
+                <a href="http://">Host</a>
+                <a href="http://">Join</a>
+            </div>
+        </div>
+
+        <div className={virtualStyle.subheader}>
+            <p className={virtualStyle.subheader1}>Upcoming</p>
+            <p className={virtualStyle.para}>Previous</p>
+        </div>
+
 
         {/* Sidenav Component */}
         <div className={virtualStyle.calendarcontainer}>

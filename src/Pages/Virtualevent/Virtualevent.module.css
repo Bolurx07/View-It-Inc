@@ -21,7 +21,7 @@
     margin-left: 12rem;
 }
 
-/* Style for input button */
+/* Styles for input button */
 
 .inputcontainer{
     display: flex;
@@ -34,8 +34,7 @@
     width: 55rem;
     padding: 0.75rem;
     border-radius: 5px;
-    border: none;
-    
+    border-color: white;
     background-color: #F9F9F9;
 }
 
@@ -45,12 +44,60 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    border-color: white;
+    border: none;
     text-align: center;
-    width: 8rem;
+    width: 9rem;
+    font-size: 1rem;
 }
 
 .button img{
     width: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 0.35rem;
 }
+
+/* Styles for Heading  */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13rem;
+    margin-top: 3rem;
+    padding: 0 2.5rem;
+}
+
+.header1, .header2{
+    display: flex;
+}
+
+.header1 p{
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.header2 a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.para{
+    color: #3434344D;
+    font-size: small;
+    margin-top: 0.25rem;
+}
+.subheader{
+    display: flex;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+.subheader p{
+    padding: 0.75rem ;
+    cursor: pointer;
+}
+.subheader1{
+    border: 1px solid;
+    border-radius: 12px;
+    background-color: #8D74F4;
+    color: white;
+}
+

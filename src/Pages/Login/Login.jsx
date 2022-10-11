@@ -5,7 +5,7 @@ import BasicTabs from '../../Components/Tabcomponent/Tabcomponent'
 
 const Login = () => {
   return (
-    <div className={lgStyle.main}>
+    <div>
       <section className={lgStyle.logincontainer}>
           <img src={xicon} alt="icon" className={lgStyle.icon} />
           <h1 className={lgStyle.heading}>Login to View-It Inc</h1>

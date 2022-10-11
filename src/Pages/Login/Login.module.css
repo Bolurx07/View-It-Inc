@@ -1,8 +1,8 @@
 
 .logincontainer{
-    width: 20rem;
+    width: 22rem;
     height: 35rem;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem 1.5rem 2.5rem;
     border: 1px solid ;
     border-radius: 12px;
     margin: 2.5rem auto;
@@ -22,18 +22,6 @@
     margin-bottom: 1rem;
   
 }
-
-/* .phonebutton, .mailbutton{
-   border: none;
-   background-color: white;
-   color: #797979;
-   font-size: 1rem;
-   margin-bottom: 1rem;
-}
-
-.phonebutton{
-    margin-right: 2rem;
-} */
 
 .passworddiv{
     margin-left: 1.5rem;
@@ -87,6 +75,7 @@
     display: block;
     height: 3rem;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .foot{

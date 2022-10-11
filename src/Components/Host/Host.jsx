@@ -13,17 +13,17 @@ const Host = () => {
             </div>
             <div>
                 <input type="checkbox" name="checkbox" className={hostStyle.checkbox} />
-                <p>Start with video On</p>
+                <p>Start with video Off</p>
             </div>
             <div>
                 <input type="checkbox" name="checkbox" className={hostStyle.checkbox} />
                 <p>Share screen only</p>
             </div>
-            <p>Share invite link</p>
+            <p id={hostStyle.fade}>Share invite link</p>
             <div>
-                <img src={hostcode} alt="meetingcode" />
+                <img className={hostStyle.image} src={hostcode} alt="meetingcode" />
             </div>
-            <button classname={hostStyle.button}type="submit">Start Meeting</button>
+            <button id={hostStyle.button}type="submit">Start Meeting</button>
         </div>  
 
     </div>

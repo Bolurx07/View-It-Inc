@@ -18,6 +18,7 @@ import video from '../../Assets/videoicon.svg'
 import search from '../../Assets/searchicon.svg'
 import {Link} from 'react-router-dom'
 import Host from '../../Components/Host/Host'
+import Join from '../../Components/Join/Join'
 
 
 const Virtualevent = () => {
@@ -37,12 +38,13 @@ const Virtualevent = () => {
         { Image: help, paragraph: "Help", active: false }
     ])
 
-    // Usestate for Host display
+    // Usestate for Host & Join Button display
     const [toggle, setToggle] = useState(false)
 
-    const hostToggle = () => {
+    const helpToggle = () => {
       return setToggle(prevToggle =>!prevToggle)
     }
+
   return (
 
     <div >
@@ -74,8 +76,8 @@ const Virtualevent = () => {
                     <p className={virtualStyle.para}>Webinar</p>
                 </div>
                 <div className={virtualStyle.header2} >
-                    <p onClick={hostToggle}>Host</p>
-                    <p>Join</p>
+                    <p onClick={helpToggle}>Host</p>
+                    <p onClick={helpToggle}>Join</p>
                 </div>
             </div>
 
@@ -85,16 +87,23 @@ const Virtualevent = () => {
             </div>
 
 
-            {/* Sidenav Component */}
+            {/* Calendar Component */}
             <div className={virtualStyle.calendarcontainer}>
                 <Calendarr />
             </div>
 
         </div>
+
+        {/* Modal for Host & Join Button */}
+        <div>
             <div className={toggle ? virtualStyle.active : virtualStyle.noactive }>
                 <Host />
             </div>
-               
+            <div className={toggle ? virtualStyle.active: virtualStyle.noactive }>
+                <Join />
+            </div>  
+        </div>
+
     </div>
   )
 }

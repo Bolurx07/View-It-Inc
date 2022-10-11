@@ -1,7 +1,7 @@
 import React from 'react'
 import hostStyle from './Host.module.css'
 import hostcode from '../../Assets/hostcode.svg'
-import Virtualevent from '../../Pages/Virtualevent/Virtualevent'
+
 
 
 const Host = () => {

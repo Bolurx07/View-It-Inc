@@ -1,7 +1,7 @@
 import lgStyle from './Login.module.css'
 import { Link } from 'react-router-dom'
 import xicon from "../../Assets/xicon.svg"
-import BasicTabs from '../../Components/Tab/Uitab'
+import BasicTabs from '../../Components/Tabcomponent/Tabcomponent'
 
 const Login = () => {
   return (

@@ -30,8 +30,8 @@ const Signup = () => {
 
           </form>
           <div className={sgStyle.foot}>
-            <p>Don't have an account?</p>
-            <a href="">Sign Up</a> 
+            <p>Already have an account?</p>
+            <Link to="Login">Login</Link> 
           </div>
         </section>
 

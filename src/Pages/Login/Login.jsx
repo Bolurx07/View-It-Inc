@@ -33,7 +33,8 @@ const Login = () => {
           </form>
           <div className={lgStyle.foot}>
             <p>Don't have an account?</p>
-            <a href="">Sign Up</a> 
+            <Link to="Signup">Sign Up</Link>
+             
           </div>
       </section>
       

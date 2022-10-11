@@ -16,6 +16,8 @@ import setting from '../../Assets/settingicon.svg'
 import help from '../../Assets/helpicon.svg'
 import video from '../../Assets/videoicon.svg'
 import search from '../../Assets/searchicon.svg'
+import {Link} from 'react-router-dom'
+
 
 const Virtualevent = () => {
     // Usestate for sidenav component

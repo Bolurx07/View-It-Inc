@@ -1,6 +1,6 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login/Login';
-import Calendarr from './Components/Calendar/Calendarr';
 import Virtualevent from './Pages/Virtualevent/Virtualevent';
 import Signup from './Pages/Signup/Signup';
 
@@ -9,7 +9,13 @@ import Signup from './Pages/Signup/Signup';
 function App() {
   return (
     <div>
-      <Signup />
+      <Routes>
+        <Route path='/' element={<Virtualevent />}/>
+        <Route path='Login' element={<Login />}/>
+        <Route path='Signup' element={<Signup />}/>
+        <Route></Route>
+      </Routes>
+      
       {/* <Login /> */}
       {/* <Virtualevent /> */}
       {/* <Calendarr /> */}

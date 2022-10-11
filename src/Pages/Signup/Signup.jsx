@@ -8,7 +8,7 @@ const Signup = () => {
   return (
     <div>
         <section className={sgStyle.logincontainer}>
-          <img src={xicon} alt="icon" className={sgStyle.icon} />
+          <Link to='/'><img src={xicon} alt="icon" className={sgStyle.icon} /></Link>  
           <h1 className={sgStyle.heading}>Join View-It Inc</h1>
           <form action="./" type="submit">
             <div>
@@ -31,7 +31,7 @@ const Signup = () => {
           </form>
           <div className={sgStyle.foot}>
             <p>Already have an account?</p>
-            <Link to="Login">Login</Link> 
+            <Link to='/Login'>Login</Link> 
           </div>
         </section>
 

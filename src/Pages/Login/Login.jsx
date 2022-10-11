@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div>
       <section className={lgStyle.logincontainer}>
-          <img src={xicon} alt="icon" className={lgStyle.icon} />
+      <Link to='/'><img src={xicon} alt="icon" className={lgStyle.icon} /></Link>
           <h1 className={lgStyle.heading}>Login to View-It Inc</h1>
           <form action="./" type="submit">
             <div>
@@ -33,7 +33,7 @@ const Login = () => {
           </form>
           <div className={lgStyle.foot}>
             <p>Don't have an account?</p>
-            <Link to="Signup">Sign Up</Link>
+            <Link to='/Signup'>Sign Up</Link>
              
           </div>
       </section>

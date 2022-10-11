@@ -2,6 +2,7 @@ import navbarStyle from './Navbar.module.css'
 import logo from '../../Assets/logo.svg'
 import notificationicon from '../../Assets/notificon.svg'
 import recordicon from '../../Assets/recordicon.svg'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -13,7 +14,11 @@ const Navbar = () => {
         <div className={navbarStyle.right}>
             <img src={notificationicon} alt="notification" />
             <img src={recordicon} alt="recordicon" />
+            <Link to='Login'>
+                <button className={navbarStyle.login}>Login</button>
+            </Link>
         </div>
+
     </div>
   )
 }

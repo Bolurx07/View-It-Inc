@@ -13,6 +13,7 @@
 
 .right img{
     padding: 0 1rem;
+    cursor: pointer;
 }
 
 .header{
@@ -20,4 +21,20 @@
     font-weight: 700;
     color: #8D74F4;
     padding: 0 1rem;
+}
+
+.login{
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    border-color: #8D74F4 ;
+    background-color: white;
+    color: #8D74F4;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #8D74F4 ;
+    color: white ;
 }

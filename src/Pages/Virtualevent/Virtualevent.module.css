@@ -104,11 +104,11 @@
 
 
 /* Styling for Host Toggle */
-.noactive{
+.noactive, .nojoin{
     display: none;
 }
 
-.active{
+.active, .join{
     display: block;
     position: absolute;
     top: 14rem;

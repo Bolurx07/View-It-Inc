@@ -16,7 +16,6 @@ import setting from '../../Assets/settingicon.svg'
 import help from '../../Assets/helpicon.svg'
 import video from '../../Assets/videoicon.svg'
 import search from '../../Assets/searchicon.svg'
-import {Link} from 'react-router-dom'
 import Host from '../../Components/Host/Host'
 import Join from '../../Components/Join/Join'
 
@@ -99,7 +98,7 @@ const Virtualevent = () => {
             <div className={toggle ? virtualStyle.active : virtualStyle.noactive }>
                 <Host />
             </div>
-            <div className={toggle ? virtualStyle.active: virtualStyle.noactive }>
+            <div className={toggle ? virtualStyle.join: virtualStyle.nojoin }>
                 <Join />
             </div>  
         </div>

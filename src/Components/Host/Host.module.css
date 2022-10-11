@@ -1,0 +1,24 @@
+.hostcontainer{
+    border: 1px solid;
+    width: 20rem;
+    height: 22rem;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.hostcontainer div{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: 0.75rem;
+}
+
+.button{
+    
+}

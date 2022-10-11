@@ -1,12 +1,13 @@
 import React from 'react'
 import hostStyle from './Host.module.css'
 import hostcode from '../../Assets/hostcode.svg'
+import Virtualevent from '../../Pages/Virtualevent/Virtualevent'
 
 
 const Host = () => {
   return (
     <div>
-        <div className={hostStyle.hostcontainer}>
+        <div id={hostStyle.hostcontainer}>
             <div>
                 <input type="checkbox" name="checkbox" className={hostStyle.checkbox} />
                 <p>Start with video On</p>

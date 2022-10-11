@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Host />} />
-        {/* <Route path='/' element={<Virtualevent />}/> */}
+        {/* <Route path='/' element={<Host />} /> */}
+        <Route path='/' element={<Virtualevent />}/>
         <Route path='Login' element={<Login />}/>
         <Route path='Signup' element={<Signup />}/>
         <Route></Route>

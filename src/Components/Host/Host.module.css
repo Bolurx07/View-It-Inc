@@ -1,4 +1,12 @@
-.hostcontainer{
+/* .underlay{
+    z-index: -1;
+    opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.64);
+} */
+#hostcontainer{
+    /* position: absolute;
+    top: 14rem;
+    right: 1rem; */
     border: 1px solid;
     width: 20rem;
     height: 22rem;
@@ -10,7 +18,7 @@
 
 }
 
-.hostcontainer div{
+#hostcontainer div{
     display: flex;
     align-items: center;
 }

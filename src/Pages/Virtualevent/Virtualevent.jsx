@@ -17,6 +17,7 @@ import help from '../../Assets/helpicon.svg'
 import video from '../../Assets/videoicon.svg'
 import search from '../../Assets/searchicon.svg'
 import {Link} from 'react-router-dom'
+import Host from '../../Components/Host/Host'
 
 
 const Virtualevent = () => {
@@ -36,52 +37,63 @@ const Virtualevent = () => {
         { Image: help, paragraph: "Help", active: false }
     ])
 
+    // Usestate for Host display
+    const [toggle, setToggle] = useState(false)
+
+    const hostToggle = () => {
+      return setToggle(prevToggle =>!prevToggle)
+    }
   return (
 
-    <div className={virtualStyle.maincontainer}>
-
-        {/* Navbar Component */}
-        <div className={virtualStyle.navbar}>
-            <Navbar />
-        </div>
-
-        {/* Sidenav Component */}
-        <div className={virtualStyle.mysidenav}>
-            {sidenav.map((item) => (
-                <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
-            ))}   
-        </div>
-
-        {/* Search Input */}
-        <div className={virtualStyle.inputcontainer}>
-            <input type="search" placeholder='Search' name="search" id={virtualStyle.search} />
-            <button className={virtualStyle.button}> <img src={search} alt="icon"/> Search</button>
-        </div>
-
-            {/* Heading */}
-        <div className={virtualStyle.header}>
-            <div className={virtualStyle.header1}>
-                <p>Meeting</p>
-                <p className={virtualStyle.para}>Podcast</p>
-                <p className={virtualStyle.para}>Webinar</p>
+    <div >
+        <div className={toggle ? virtualStyle.nocontainer : virtualStyle.maincontainer}>
+    
+            {/* Navbar Component */}
+            <div className={toggle ? virtualStyle.nonavbar : virtualStyle.navbar}>
+                <Navbar />
             </div>
-            <div className={virtualStyle.header2}>
-                <a href="http://">Host</a>
-                <a href="http://">Join</a>
+
+            {/* Sidenav Component */}
+            <div className={toggle ? virtualStyle.nosidenav : virtualStyle.mysidenav }>
+                {sidenav.map((item) => (
+                    <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
+                ))}   
             </div>
+
+            {/* Search Input */}
+            <div className={virtualStyle.inputcontainer}>
+                <input type="search" placeholder='Search' name="search" className={toggle ? virtualStyle.nosearch : virtualStyle.search} />
+                <button className={virtualStyle.button}> <img src={search} alt="icon"/> Search</button>
+            </div>
+
+                {/* Heading */}
+            <div className={virtualStyle.header}>
+                <div className={virtualStyle.header1}>
+                    <p>Meeting</p>
+                    <p className={virtualStyle.para}>Podcast</p>
+                    <p className={virtualStyle.para}>Webinar</p>
+                </div>
+                <div className={virtualStyle.header2} >
+                    <p onClick={hostToggle}>Host</p>
+                    <p>Join</p>
+                </div>
+            </div>
+
+            <div className={virtualStyle.subheader}>
+                <p className={virtualStyle.subheader1}>Upcoming</p>
+                <p className={virtualStyle.para}>Previous</p>
+            </div>
+
+
+            {/* Sidenav Component */}
+            <div className={virtualStyle.calendarcontainer}>
+                <Calendarr />
+            </div>
+
         </div>
-
-        <div className={virtualStyle.subheader}>
-            <p className={virtualStyle.subheader1}>Upcoming</p>
-            <p className={virtualStyle.para}>Previous</p>
-        </div>
-
-
-        {/* Sidenav Component */}
-        <div className={virtualStyle.calendarcontainer}>
-            <Calendarr />
-        </div>
-
+            <div className={toggle ? virtualStyle.active : virtualStyle.noactive }>
+                <Host />
+            </div>
                
     </div>
   )

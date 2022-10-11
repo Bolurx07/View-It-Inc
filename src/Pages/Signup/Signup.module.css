@@ -47,7 +47,11 @@
     color: rgba(121, 121, 121, 0.5);
 }
 
-
+.checkboxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 #signup{
     padding: 1rem 6rem ;

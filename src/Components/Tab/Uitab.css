@@ -1,0 +1,18 @@
+.label{
+    font-size: 1rem;
+    color: #797979;
+}
+
+.tabinput{
+    background-color: #F3F3F3;
+    width: 15rem;
+    padding: 1rem;
+    height: 3.5rem;
+    border-radius: 12px;
+    border: none;
+    margin-top: 0.75rem;
+}
+
+.tabinput::placeholder {
+    color: rgba(121, 121, 121, 0.5);
+}

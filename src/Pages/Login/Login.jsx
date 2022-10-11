@@ -1,37 +1,29 @@
 import lgStyle from './Login.module.css'
 import { Link } from 'react-router-dom'
 import xicon from "../../Assets/xicon.svg"
+import BasicTabs from '../../Components/Tab/Uitab'
 
 const Login = () => {
   return (
-    <div>
+    <div className={lgStyle.main}>
       <section className={lgStyle.logincontainer}>
           <img src={xicon} alt="icon" className={lgStyle.icon} />
           <h1 className={lgStyle.heading}>Login to View-It Inc</h1>
-          <div className={lgStyle.buttondiv}>
-            <button className={lgStyle.phonebutton}>Phone Number</button>
-            <button className={lgStyle.mailbutton}>Email</button>
-          </div>
           <form action="./" type="submit">
             <div>
-              <label className={lgStyle.label} htmlFor="phone-no">Phone Number</label>
-              <br />
-              <br />
-              <input type="phone" name="phone-no" placeholder="Phone Number" id={lgStyle.phoneno} />
+                <BasicTabs />
             </div>
-            <br />
-            <div>
+            <div className={lgStyle.passworddiv}>
                 <label className={lgStyle.label} htmlFor="">Password</label>
-                <br />
                 <br />
                 <input type="password" name="password" placeholder="Password" id={lgStyle.password} />
             </div>
             <div className={lgStyle.checkboxcontainer}>
               <div>
                 <input type="checkbox" name="checkbox" id={lgStyle.checkbox} />
-                <span>Remember me</span>
+                <span className={lgStyle.span}>Remember me</span>
               </div>
-                <p>Forgot Password?</p>
+                <p className={lgStyle.span}>Forgot Password?</p>
             </div>
 
             <div >
@@ -41,7 +33,7 @@ const Login = () => {
           </form>
           <div className={lgStyle.foot}>
             <p>Don't have an account?</p>
-            <span>Sign Up</span>
+            <a href="">Sign Up</a> 
           </div>
       </section>
       

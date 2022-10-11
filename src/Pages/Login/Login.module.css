@@ -1,27 +1,29 @@
+
 .logincontainer{
-    width: 23rem;
-    height: 40rem;
+    width: 20rem;
+    height: 35rem;
     padding: 1.5rem;
     border: 1px solid ;
     border-radius: 12px;
-    margin: auto auto;
+    margin: 2.5rem auto;
 }
 
 .heading{
     text-align: center;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     clear: right;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .icon{
     float: right;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
+  
 }
 
-.phonebutton, .mailbutton{
+/* .phonebutton, .mailbutton{
    border: none;
    background-color: white;
    color: #797979;
@@ -31,20 +33,26 @@
 
 .phonebutton{
     margin-right: 2rem;
+} */
+
+.passworddiv{
+    margin-left: 1.5rem;
 }
 
 .label{
     font-size: 1rem;
     color: #797979;
+    
 }
 
-#phoneno, #password{
+#password{
     background-color: #F3F3F3;
-    width: 20rem;
+    width: 15rem;
     padding: 1rem;
     height: 3.5rem;
     border-radius: 12px;
     border: none;
+    margin-top: 0.75rem;
 }
 
 #phoneno::placeholder, #password::placeholder{
@@ -54,15 +62,21 @@
 .checkboxcontainer{
     display: flex;
     justify-content: space-between; 
-    margin: 2rem auto;   
+    margin: 1rem auto; 
+    padding: 0 1rem; 
+    align-items: center; 
 }
 
 #checkbox{
     margin-right: 0.5rem;
 }
 
+.span{
+    font-size: small; 
+}
+
 #login{
-    padding: 1rem 8rem ;
+    padding: 1rem 6rem ;
     color: white;
     font-size: 1rem;
     text-align: center;
@@ -77,5 +91,17 @@
 
 .foot{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
 
+.foot p{
+    font-size: smaller;
+}
+
+.foot a{
+    text-decoration: none;
+    color: #8D74F4;
+    font-weight: 500;
 }

@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=bolurx07" alt="bolurx07" /></a> </p>
 
-- 🔭 I’m currently working on [Grazac challenge 3](https://github.com/Bolurx07/Grazac-Challenge-3) built with <h2>ReactJs</h2>
+- 🔭 I’m currently working on [Grazac challenge 3](https://github.com/Bolurx07/Grazac-Challenge-3) built with <h5>ReactJs</h5>
 
 - 🌱 I’m currently learning **Javascript & Reactjs**
 

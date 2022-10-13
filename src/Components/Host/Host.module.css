@@ -44,3 +44,10 @@
     font-size: small;
     cursor: pointer ;
 }
+
+@media screen and (max-width: 400px) {
+    #hostcontainer{
+        width: 15rem;
+    } 
+    
+}

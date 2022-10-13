@@ -42,5 +42,27 @@
 /* Mobile viewport */
 
 @media screen and (max-width: 768px) {
+    .header{
+        font-size: 1.5rem;  
+    }
+    .right{
+        display: none;
+    }
+    .left img{
+        width: 2rem;
+    }
+    .navbar{
+        border-bottom: none;
+        padding: 2rem;
+    }
     
+}
+
+@media screen and (max-width: 400px) {
+    .header{
+        font-size: 1.25rem;  
+    }
+    .left img{
+        width: 1.8rem;
+    }
 }

@@ -140,37 +140,53 @@
 
 }
 
+/* sidenav hamburger toggle */
 #hamburger{
    display: none; 
+}
+.inactive{
+    display: block;
+}
+
+
+/* Mobile viewport */
+
+@media screen and (max-width: 1100px) {
+    
+    .active{
+        top: 17rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #hamburger{
         display: block;
         cursor: pointer;
-        font-size: 4rem;
-        color: #8D74F4;  
+        font-size: 3.5rem;
+        color: #8D74F4; 
+        margin-right: 1rem; 
+        margin-top: 0.5rem;
     }
-
+    
     .navwrap{
         display: flex;
         justify-content: space-between;
         background-color: white;
         
     }
-
+    
     .inactive{
         display: none;
     }
-
-    .active{
+    
+    .aactive{
         display: block;
         position: absolute;
         top: 0;
         left: 0;
-        /* top: 10rem; */
-        width: 50vw;
-        /* background-color: #8D74F4; */
+        width: 45vw;
+        z-index: 1;
+        background-color: rgb(160, 150, 150);
     }
 
     .calendarcontainer, .header, .subheader{
@@ -181,8 +197,30 @@
         padding: 0 1rem;
         margin-left: 1rem;
     }
+    .subheader{
+        margin-left: 3.5rem;
+    }
+    .calendarcontainer{
+        z-index: -1;
+        opacity: 0.9;
+    }
+    .search{
+        margin: 1rem 0;
+    }
+    .active{
+        top: 18rem;
+    }
 }
 
-.subheader{
-    margin-left: 3.5rem;
+@media screen and (max-width: 400px) {
+    #hamburger{
+        font-size: 3rem;
+    }
+    .header2{
+        margin-top: 1rem;
+    }
+    .active{
+        top: 20rem;
+        right: 4rem;
+    }
 }

@@ -70,7 +70,7 @@ const Virtualevent = () => {
 
             {/* Sidenav Component */}
             <div className={toggle ? virtualStyle.nosidenav : virtualStyle.mysidenav }>
-                <div className={doggle ? virtualStyle.active : virtualStyle.inactive }>
+                <div className={doggle ? virtualStyle.aactive : virtualStyle.inactive }>
                     {sidenav.map((item) => (
                         <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
                     ))}   

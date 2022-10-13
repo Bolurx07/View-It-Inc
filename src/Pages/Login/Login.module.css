@@ -94,3 +94,10 @@
     color: #8D74F4;
     font-weight: 500;
 }
+
+@media screen and (max-width: 450px) {
+    .logincontainer{
+        border: none;
+        margin: 0.75rem auto;
+    }
+}

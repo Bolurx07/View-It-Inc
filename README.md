@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Abiodun Israel</h1>
-<h3 align="center">A passionate frontend developer from Grazac Academy, Nigeria.</h3>
+<h3 align="center">A passionate front-end developer from Grazac Academy, Nigeria.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=bolurx07&label=Profile%20views&color=0e75b6&style=flat" alt="bolurx07" /> </p>
 

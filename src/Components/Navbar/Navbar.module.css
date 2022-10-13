@@ -38,3 +38,9 @@
     background-color: #8D74F4 ;
     color: white ;
 }
+
+/* Mobile viewport */
+
+@media screen and (max-width: 768px) {
+    
+}

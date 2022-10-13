@@ -37,6 +37,13 @@ const Virtualevent = () => {
         { Image: help, paragraph: "Help", active: false }
     ])
 
+     // Usestate Hamburger display
+     const [doggle, setDoggle] = useState(false)
+
+     const helpDoggle = () => {
+       return setDoggle(prevDoggle =>!prevDoggle)
+     }
+    
     // Usestate for Host & Join Button display
     const [toggle, setToggle] = useState(false)
 
@@ -44,22 +51,33 @@ const Virtualevent = () => {
       return setToggle(prevToggle =>!prevToggle)
     }
 
+    
   return (
 
     <div >
         <div className={toggle ? virtualStyle.nocontainer : virtualStyle.maincontainer}>
-    
-            {/* Navbar Component */}
-            <div className={toggle ? virtualStyle.nonavbar : virtualStyle.navbar}>
-                <Navbar />
+            <div className={virtualStyle.navwrap}>
+                {/* Navbar Component */}
+                <div className={toggle ? virtualStyle.nonavbar : virtualStyle.navbar}>
+                    <Navbar />
+                </div>
+
+                    {/* Sidenav Toggle */}
+                <div id={virtualStyle.hamburger} onClick={helpDoggle}>
+                    {doggle ? <div>&times;</div> :  <div>&#9776;</div>}
+                </div>
             </div>
 
             {/* Sidenav Component */}
             <div className={toggle ? virtualStyle.nosidenav : virtualStyle.mysidenav }>
-                {sidenav.map((item) => (
-                    <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
-                ))}   
+                <div className={doggle ? virtualStyle.active : virtualStyle.inactive }>
+                    {sidenav.map((item) => (
+                        <Sidenav image={item.Image} paragraph={item.paragraph} active={item.active}/>
+                    ))}   
+                </div>
+            
             </div>
+           
 
             {/* Search Input */}
             <div className={virtualStyle.inputcontainer}>
@@ -76,7 +94,7 @@ const Virtualevent = () => {
                 </div>
                 <div className={virtualStyle.header2} >
                     <p onClick={helpToggle}>Host</p>
-                    <p onClick={helpToggle}>Join</p>
+                    <p>Join</p>
                 </div>
             </div>
 
@@ -98,9 +116,9 @@ const Virtualevent = () => {
             <div className={toggle ? virtualStyle.active : virtualStyle.noactive }>
                 <Host />
             </div>
-            <div className={toggle ? virtualStyle.join: virtualStyle.nojoin }>
-                <Join />
-            </div>  
+            <div className={toggle ? virtualStyle.join : virtualStyle.nojoin }>
+                {/* <Join /> */}
+            </div>
         </div>
 
     </div>

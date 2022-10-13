@@ -22,15 +22,20 @@ const localizer = dateFnsLocalizer({
 })
 
 const events = [
-   {
+  {
+    title: "Grazac Presentation",
+    start: new Date(2022, 9, 12),
+    end : new Date(2022, 9, 12)
+   },  
+  {
     title: "Grazac Monthly Meeting",
-    start: new Date(2022, 9, 13),
-    end : new Date(2022, 9, 13)
+    start: new Date(2022, 9, 14),
+    end : new Date(2022, 9, 14)
    }, 
    {
     title: "Daily Challenge Review",
-    start: new Date(2022, 9, 14),
-    end : new Date(2022, 9, 14)
+    start: new Date(2022, 9, 17),
+    end : new Date(2022, 9, 17)
    } 
 ]
 

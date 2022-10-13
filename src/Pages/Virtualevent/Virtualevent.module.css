@@ -31,7 +31,7 @@
 }
 
 .search{
-    width: 55rem;
+    width: 57rem;
     padding: 0.75rem;
     border-radius: 5px;
     border-color: white;
@@ -60,6 +60,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 13rem;
     margin-top: 3rem;
     padding: 0 2.5rem;
@@ -137,4 +138,51 @@
     opacity: 0.3;
     background-color: rgba(163, 162, 162, 0.64);
 
+}
+
+#hamburger{
+   display: none; 
+}
+
+@media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
+        cursor: pointer;
+        font-size: 4rem;
+        color: #8D74F4;  
+    }
+
+    .navwrap{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        
+    }
+
+    .inactive{
+        display: none;
+    }
+
+    .active{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* top: 10rem; */
+        width: 50vw;
+        /* background-color: #8D74F4; */
+    }
+
+    .calendarcontainer, .header, .subheader{
+        margin-left: 1rem;
+    }
+
+    .inputcontainer{
+        padding: 0 1rem;
+        margin-left: 1rem;
+    }
+}
+
+.subheader{
+    margin-left: 3.5rem;
 }

@@ -148,6 +148,10 @@
     display: block;
 }
 
+#login{
+    display: none;
+}
+
 
 /* Mobile viewport */
 
@@ -174,6 +178,30 @@
         background-color: white;
         
     }
+
+    .logincontainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logincontainer a{
+        text-decoration: none;
+        
+    }
+
+    #login{
+        display: block;
+        padding: 0.75rem 2rem;
+        border-radius: 10px;
+        border-color: #8D74F4 ;
+        color: white;
+        background-color: #8D74F4;
+        font-weight: 500;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        
+    }
     
     .inactive{
         display: none;
@@ -182,11 +210,11 @@
     .aactive{
         display: block;
         position: absolute;
-        top: 0;
+        top: -4.5rem;
         left: 0;
-        width: 45vw;
+        width: 55vw;
         z-index: 1;
-        background-color: rgb(160, 150, 150);
+        background-color: rgb(212, 204, 204);
     }
 
     .calendarcontainer, .header, .subheader{

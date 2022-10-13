@@ -18,7 +18,7 @@ import video from '../../Assets/videoicon.svg'
 import search from '../../Assets/searchicon.svg'
 import Host from '../../Components/Host/Host'
 import Join from '../../Components/Join/Join'
-
+import {Link} from 'react-router-dom'
 
 const Virtualevent = () => {
     // Usestate for sidenav component
@@ -68,6 +68,13 @@ const Virtualevent = () => {
                 </div>
             </div>
 
+            {/* Login button strictly for mobile viewport */}
+            <div className={virtualStyle.logincontainer}>
+                <Link to='Login'>
+                    <button id={virtualStyle.login}>Login</button>
+                </Link>
+            </div>
+            
             {/* Sidenav Component */}
             <div className={toggle ? virtualStyle.nosidenav : virtualStyle.mysidenav }>
                 <div className={doggle ? virtualStyle.aactive : virtualStyle.inactive }>

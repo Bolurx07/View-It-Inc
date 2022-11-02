@@ -5,23 +5,22 @@ import Virtualevent from './Pages/Virtualevent/Virtualevent';
 import Signup from './Pages/Signup/Signup';
 import Host from './Components/Host/Host';
 import Join from './Components/Join/Join';
-
+import Modaldemo from './Pages/Modaldemo/Modaldemo';
 
 
 function App() {
   return (
     <div>
-      <Routes>
-        {/* <Route path='/' element={<Join />} /> */}
+      <Modaldemo />
+      {/* <Routes>
+  
         <Route path='/' element={<Virtualevent />}/>
         <Route path='Login' element={<Login />}/>
         <Route path='Signup' element={<Signup />}/>
         <Route></Route>
-      </Routes>
+      </Routes> */}
       
-      {/* <Login /> */}
-      {/* <Virtualevent /> */}
-      {/* <Calendarr /> */}
+
     </div>
   );
 }

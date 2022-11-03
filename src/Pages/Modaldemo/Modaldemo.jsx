@@ -1,7 +1,8 @@
 
 import { useState } from 'react';
 import MyVerticallyCenteredModal from '../../Components/Modal/Modal';
-import './Modaldemo.css'
+
+
 
 
 export default function Modaldemo() {
@@ -9,7 +10,7 @@ export default function Modaldemo() {
   
     return (
       <>
-      <button  
+      <button  className='bg-primary text-light position-absolute top-50 start-50 translate-middle'
         onClick={() => setModalShow(true)}>
         Show Modal
       </button>

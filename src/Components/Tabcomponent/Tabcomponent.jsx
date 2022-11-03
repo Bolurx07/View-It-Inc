@@ -4,7 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import './Tabcomponent.css'
+import tabStyle from './Tabcomponent.module.css'
+import { Link } from 'react-router-dom';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,16 +57,56 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
           <div>
-            <label className='label' htmlFor="phone-no">Phone Number</label>
+            <label className={tabStyle.label} htmlFor="phone-no">Phone Number</label>
             <br />
-            <input type="phone" className='tabinput' name="phone-no" placeholder="Phone Number"  />
+            <input type="phone" className={tabStyle.tabinput} name="phone-no" placeholder="Phone Number"  />
+          </div>
+          <div >
+                <label htmlFor="">Password</label>
+                <br />
+                <input type="password" name="password" placeholder="Password"  />
+            </div>
+            <div >
+              <div>
+                <input type="checkbox" name="checkbox"  />
+                <span >Remember me</span>
+              </div>
+                <p >Forgot Password?</p>
+            </div>
+
+            <div >
+              <button type="submit" >Login</button>
+            </div>
+          <div >
+            <p> Don't have an account?</p>
+            <Link to='/Signup'>Sign Up</Link> 
           </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
           <div>
-            <label className='label' htmlFor="email">Email</label>
+            <label className={tabStyle.label} htmlFor="email">Email</label>
             <br />
             <input type="email" className='tabinput' name="email" placeholder="Email"  />
+          </div>
+          <div >
+                <label htmlFor="">Password</label>
+                <br />
+                <input type="password" name="password" placeholder="Password"  />
+            </div>
+            <div >
+              <div>
+                <input type="checkbox" name="checkbox"  />
+                <span >Remember me</span>
+              </div>
+                <p >Forgot Password?</p>
+            </div>
+
+            <div >
+              <button type="submit" >Login</button>
+            </div>
+          <div >
+            <p> Don't have an account?</p>
+            <Link to='/Signup'>Sign Up</Link> 
           </div>
       </TabPanel>
       

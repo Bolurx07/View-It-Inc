@@ -1,16 +1,16 @@
 
-
 import { Link } from 'react-router-dom'
 import xicon from "../../Assets/xicon.svg"
 import BasicTabs from '../../Components/Tabcomponent/Tabcomponent'
 import Modal from 'react-bootstrap/Modal';
+import '../Modal/Modal.css'
 
 
 
 
 export default function MyVerticallyCenteredModal(props) {
   return (
-    <Modal
+    <Modal  
       {...props}
       size="sm"
       aria-labelledby="contained-modal-title-vcenter"
@@ -18,36 +18,13 @@ export default function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          <h1 >Login to View-It Inc</h1>
+          <p >Login to View-It Inc</p>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <form action="./" type="submit">
-            <div>
-                <BasicTabs />
-            </div>
-            <div >
-                <label htmlFor="">Password</label>
-                <br />
-                <input type="password" name="password" placeholder="Password"  />
-            </div>
-            <div >
-              <div>
-                <input type="checkbox" name="checkbox"  />
-                <span >Remember me</span>
-              </div>
-                <p >Forgot Password?</p>
-            </div>
-
-            <div >
-              <button type="submit" >Login</button>
-            </div>
-
-          </form>
-          <div >
-            <p> Don't have an account?</p>
-            <Link to='/Signup'>Sign Up</Link> 
-          </div>
+      
+        <BasicTabs />
+            
       </Modal.Body>
      
     </Modal>

@@ -61,23 +61,23 @@ export default function BasicTabs() {
             <br />
             <input type="phone" className={tabStyle.tabinput} name="phone-no" placeholder="Phone Number"  />
           </div>
-          <div >
-                <label htmlFor="">Password</label>
+          <div>
+                <label className={tabStyle.label} htmlFor="">Password</label>
                 <br />
-                <input type="password" name="password" placeholder="Password"  />
+                <input id={tabStyle.password} type="password" name="password" placeholder="Password"  />
             </div>
-            <div >
-              <div>
-                <input type="checkbox" name="checkbox"  />
-                <span >Remember me</span>
+            <div className={tabStyle.checkboxcontainer}>
+              <div >
+                <input id={tabStyle.checkbox} type="checkbox" name="checkbox"  />
+                <span className={tabStyle.span}>Remember me</span>
               </div>
-                <p >Forgot Password?</p>
+                <span className={tabStyle.span2}>Forgot Password?</span>
             </div>
 
             <div >
-              <button type="submit" >Login</button>
+              <button id={tabStyle.login} type="submit" >Login</button>
             </div>
-          <div >
+          <div className={tabStyle.foot}>
             <p> Don't have an account?</p>
             <Link to='/Signup'>Sign Up</Link> 
           </div>

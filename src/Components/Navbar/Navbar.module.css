@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .right img{
@@ -16,6 +17,9 @@
     cursor: pointer;
 }
 
+.right button{
+    margin: 0 1rem;
+}
 .header{
     font-size: 2rem;
     font-weight: 700;
@@ -23,7 +27,7 @@
     padding: 0 1rem;
 }
 
-#login{
+#login, #signup{
     padding: 0.75rem 1.5rem;
     border-radius: 10px;
     border-color: #8D74F4 ;
@@ -34,7 +38,7 @@
     cursor: pointer;
 }
 
-#login:hover{
+#login:hover, #signup:hover{
     background-color: #8D74F4 ;
     color: white ;
 }

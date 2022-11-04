@@ -25,12 +25,15 @@ const Navbar = () => {
             onHide={() => setModalShow(false)}
           />
         </div>
-        
+
         <div className={navbarStyle.right}>
             <img src={notificationicon} alt="notification" />
             <img src={recordicon} alt="recordicon" />
             <button id={navbarStyle.login} onClick={() => setModalShow(true)}>
                   Login
+            </button>
+            <button id={navbarStyle.signup} onClick={() => setModalShow(true)}>
+                  Sign Up
             </button>
         </div>
 

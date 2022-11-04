@@ -78,7 +78,7 @@ export default function BasicTabs() {
               <button id={tabStyle.login} type="submit" >Login</button>
             </div>
           <div className={tabStyle.foot}>
-            <p> Don't have an account?</p>
+            <span> Don't have an account?</span>
             <Link to='/Signup'>Sign Up</Link> 
           </div>
       </TabPanel>

@@ -40,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs({button, checkbox, comment}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -75,10 +75,10 @@ export default function BasicTabs() {
             </div>
 
             <div >
-              <button id={tabStyle.login} type="submit" >Login</button>
+              <button id={tabStyle.login} type="submit" >{button}</button>
             </div>
           <div className={tabStyle.foot}>
-            <span> Don't have an account?</span>
+            <span> {comment}</span>
             <Link to='/Signup'>Sign Up</Link> 
           </div>
       </TabPanel>
@@ -98,14 +98,14 @@ export default function BasicTabs() {
                 <input id={tabStyle.checkbox} type="checkbox" name="checkbox"  />
                 <span className={tabStyle.span}>Remember me</span>
               </div>
-                <span className={tabStyle.span2}>Forgot Password?</span>
+                <span className={tabStyle.span2}>{checkbox}</span>
             </div>
 
             <div >
-              <button id={tabStyle.login} type="submit" >Login</button>
+              <button id={tabStyle.login} type="submit" >{button}</button>
             </div>
           <div className={tabStyle.foot}>
-            <span> Don't have an account?</span>
+            <span> {comment}</span>
             <Link to='/Signup'>Sign Up</Link> 
           </div>
       </TabPanel>

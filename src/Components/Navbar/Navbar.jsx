@@ -9,6 +9,7 @@ import MyVerticallyCenteredModal from "../../Components/Modal/Login";
 
 const Navbar = () => {
 
+    // useState of the modal component for Login
   const [modalShow, setModalShow] = useState(false);
 
   return (

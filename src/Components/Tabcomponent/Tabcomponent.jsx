@@ -79,7 +79,7 @@ export default function BasicTabs({button, checkbox, comment, remember, link}) {
             </div>
           <div className={tabStyle.foot}>
             <span> {comment}</span>
-            <Link to='/Signup'>{link}</Link> 
+            <Link to='./'>{link}</Link> 
           </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -106,7 +106,7 @@ export default function BasicTabs({button, checkbox, comment, remember, link}) {
             </div>
           <div className={tabStyle.foot}>
             <span> {comment}</span>
-            <Link to='/Signup'>{link}</Link> 
+            <Link to='./'>{link}</Link> 
           </div>
       </TabPanel>
       

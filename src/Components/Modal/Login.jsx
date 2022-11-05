@@ -19,7 +19,7 @@ export default function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <BasicTabs button='Login' comment='Dont have an account?' remember='Remember Me' link='Login' checkbox='Forgot Password?'/>
+        <BasicTabs button='Login' comment='Dont have an account?' remember='Remember Me' link='Sign Up' checkbox='Forgot Password?'/>
       </Modal.Body>
     </Modal>
   );

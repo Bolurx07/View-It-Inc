@@ -1,11 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Login from './Components/Modal/Login';
 import Virtualevent from './Pages/Virtualevent/Virtualevent';
-import Signup from './Pages/Signup/Signup';
-import Host from './Components/Host/Host';
-import Join from './Components/Join/Join';
-import Modaldemo from './Pages/Modaldemo/Modaldemo';
+
 
 
 function App() {
@@ -15,8 +11,8 @@ function App() {
       <Routes>
   
         <Route path='/' element={<Virtualevent />}/>
-        <Route path='Login' element={<Login />}/>
-        <Route path='Signup' element={<Signup />}/>
+        {/* <Route path='Login' element={<MyVerticallyCenteredModal />}/>
+        <Route path='Signup' element={<MyVerticallyCenteredModal />}/> */}
        
       </Routes>
       

@@ -168,7 +168,7 @@
         cursor: pointer;
         font-size: 3.5rem;
         color: #8D74F4; 
-        margin-right: 1rem; 
+        margin-left: 1.5rem; 
         margin-top: 0.5rem;
     }
     
@@ -176,30 +176,7 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
-        
-    }
-
-    .logincontainer{
-        display: flex;
-        justify-content: center;
-    }
-
-    .logincontainer a{
-        text-decoration: none;
-        
-    }
-
-    #login{
-        display: block;
-        padding: 0.75rem 2rem;
-        border-radius: 10px;
-        border-color: #8D74F4 ;
-        color: white;
-        background-color: #8D74F4;
-        font-weight: 500;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-top: 1rem;
+        flex-direction: row-reverse;
         
     }
     
@@ -210,7 +187,7 @@
     .aactive{
         display: block;
         position: absolute;
-        top: -4.5rem;
+        top: 0;
         left: 0;
         width: 55vw;
         z-index: 1;
@@ -224,6 +201,7 @@
     .inputcontainer{
         padding: 0 1rem;
         margin-left: 1rem;
+        margin-top: 7rem;
     }
     .subheader{
         margin-left: 3.5rem;
@@ -237,6 +215,13 @@
     }
     .active{
         top: 22rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .inputcontainer{
+        margin-top: 11rem;
     }
 }
 

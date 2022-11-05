@@ -68,12 +68,6 @@ const Virtualevent = () => {
                 </div>
             </div>
 
-            {/* Login button strictly for mobile viewport */}
-            <div className={virtualStyle.logincontainer}>
-                <Link to='Login'>
-                    <button id={virtualStyle.login}>Login</button>
-                </Link>
-            </div>
             
             {/* Sidenav Component */}
             <div className={toggle ? virtualStyle.nosidenav : virtualStyle.mysidenav }>

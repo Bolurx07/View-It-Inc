@@ -46,20 +46,52 @@
 /* Mobile viewport */
 
 @media screen and (max-width: 768px) {
-    .header{
-        font-size: 1.5rem;  
-    }
-    .right{
-        display: none;
-    }
-    .left img{
-        width: 2rem;
-    }
     .navbar{
+        position: relative;
         border-bottom: none;
         padding: 2rem;
     }
+
+    .header{
+        font-size: 1.5rem;  
+    }
+
+    .right{
+        position: absolute;
+        top: 8rem;
+        right: 12rem;
+    }
+
+    .right img{
+        display: none;
+    }
+
+    .left img{
+        width: 2rem;
+    }
     
+    #login, #signup{
+        width: 8rem;
+        background-color: #8D74F4;
+        color: white;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .right{
+        right: 8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .right{
+        right: 10rem;
+        flex-wrap: wrap;
+    }
+    .right button{
+        margin: 0.5rem 0;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -68,5 +100,10 @@
     }
     .left img{
         width: 1.8rem;
+    }
+    
+    .right{
+        right: 7rem;
+       
     }
 }

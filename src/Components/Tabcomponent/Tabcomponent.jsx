@@ -40,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({button, checkbox, comment}) {
+export default function BasicTabs({button, checkbox, comment, remember, link}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -69,9 +69,9 @@ export default function BasicTabs({button, checkbox, comment}) {
             <div className={tabStyle.checkboxcontainer}>
               <div >
                 <input id={tabStyle.checkbox} type="checkbox" name="checkbox"  />
-                <span className={tabStyle.span}>Remember me</span>
+                <span className={tabStyle.span}>{remember}</span>
               </div>
-                <span className={tabStyle.span2}>Forgot Password?</span>
+                <span className={tabStyle.span2}>{checkbox}</span>
             </div>
 
             <div >
@@ -79,7 +79,7 @@ export default function BasicTabs({button, checkbox, comment}) {
             </div>
           <div className={tabStyle.foot}>
             <span> {comment}</span>
-            <Link to='/Signup'>Sign Up</Link> 
+            <Link to='/Signup'>{link}</Link> 
           </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -96,7 +96,7 @@ export default function BasicTabs({button, checkbox, comment}) {
             <div className={tabStyle.checkboxcontainer}>
               <div >
                 <input id={tabStyle.checkbox} type="checkbox" name="checkbox"  />
-                <span className={tabStyle.span}>Remember me</span>
+                <span className={tabStyle.span}>{remember}</span>
               </div>
                 <span className={tabStyle.span2}>{checkbox}</span>
             </div>
@@ -106,7 +106,7 @@ export default function BasicTabs({button, checkbox, comment}) {
             </div>
           <div className={tabStyle.foot}>
             <span> {comment}</span>
-            <Link to='/Signup'>Sign Up</Link> 
+            <Link to='/Signup'>{link}</Link> 
           </div>
       </TabPanel>
       

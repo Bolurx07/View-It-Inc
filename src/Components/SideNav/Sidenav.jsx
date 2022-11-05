@@ -6,7 +6,7 @@ const Sidenav = ({image, paragraph, active}) => {
     <div  className={ active === true ? sidenavStyle.background : sidenavStyle.nobackground} >
         <div className={sidenavStyle.container}>
             <img src={image} alt="" />
-            <p>{paragraph}</p>
+            <p className={sidenavStyle.content}>{paragraph}</p>
         </div>
     </div>
   )

@@ -214,7 +214,7 @@
         margin: 1rem 0;
     }
     .active{
-        top: 22rem;
+        top: 25rem;
     }
 }
 
@@ -222,6 +222,9 @@
 
     .inputcontainer{
         margin-top: 11rem;
+    }
+    .active{
+        top: 29rem;
     }
 }
 
@@ -233,7 +236,7 @@
         margin-top: 1rem;
     }
     .active{
-        top: 23rem;
+        top: 32rem;
         right: 4rem;
     }
 }
